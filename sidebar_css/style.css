@@ -1,0 +1,120 @@
+*{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#outer{
+    background: url(photo.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+#sidebar{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100%;
+    width: 32%;
+    position: fixed;
+    left: -500px;
+    transition: all 1s linear;
+    box-shadow: 0 0 5px grey;
+}
+
+#hamicon{
+    font-size: 300%;
+    color: gray;
+    cursor: pointer;
+}
+
+#crossicon{
+    font-size: 275%;
+    color: gray;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#ham{
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#cross{
+    position: absolute;
+    left: 430px;
+    top: 12px;
+    cursor: pointer;
+}
+
+h1{
+    position: fixed;
+    left: 4.5%;
+    color: white;
+    font-size:200% ;
+    top: 12px;
+}
+
+#service{
+    position: relative;
+    top: 12%;
+}
+
+#service ul li{
+    text-align: center;
+    margin: 20px 2px;
+    padding: 10px;
+    list-style: none;
+}
+
+#service ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#service ul li a span{
+    position: relative;
+    left: -20px;
+}
+
+#service ul li:hover{
+    box-shadow: 0 0 5px grey;
+}
+
+#socials{
+    position: absolute;
+    bottom: 20px;
+    left: 115px;
+}
+
+#socials i{
+    font-size:35px;
+    margin: 0px 12px;
+}
+
+#socials i:hover{
+    font-size:45px;
+    font-weight: 700;
+    color: rgba(252, 252, 252, 0.577);
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ #sidebar{
+    left: 0px;
+}
+
+#check:checked ~ #sidebar label #cross #crossicon{
+    opacity: 1;
+}
+
+#check:checked ~ label #ham #hamicon{
+    opacity: 0;
+}
+
+#hamicon:hover{
+    font-size:350% ;
+}
