@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div class="header">
+            <img src="https://th.bing.com/th?id=OIP.ZHVPqd50Zz8-tT3ELjmgugHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo" style="height: 100px;">
+            <p id="top"><u>IRCTC REGISTRATION FORM</u></p>
+        </div>
+        
+        <div>
+            <p><b>JOURNEY DETAILS</b></p>
+        <br>
+        <label for="tno">ENTER TRAIN NO.</label>
+        <input type="text" name="trainno" id="tno">
+        <label for="tname">ENTER TRAIN NAME</label>
+        <input type="text" name="trainname" id="tname">
+        </div>
+        <br>
+        <div>
+            <p>SELECT CLASS</p>
+            <select name="class">
+                <option value="SLEEPER">SLEEPER</option>
+                <option value="3A">3A</option>
+                <option value="2A">2A</option>
+                <option value="1A">1A</option>
+          </select>
+        </div>
+        <br>
+        <div>
+            <label for="from">STATION FROM:</label>
+            <input type="text" name="from" id="from">
+            <label for="to">STATION TO:</label>
+            <input type="text" name="from" id="to">
+        </div>
+        <br>
+        <div>
+            <select name="quota" id="quota">
+                <option value="TATKAL">TATKAL</option>
+                <option value="LADIES">LADIES</option>
+                <option value="SENIOR CITIZEN">SENIOR CITIZEN</option>
+            </select>
+        </div>
+        <br>
+        <div class="allPassenger">
+            <table>
+                <thead class="passengerTable">
+                    <tr>
+                            <td>NAME</td>
+                            <td>SEX</td>
+                            <td>BERTH</td>
+                            <td>MEAL</td>
+                            <td>ID CARD</td>
+                            <td>ID CARD NUMBER</td>
+                    </tr>
+                    <tr class="passenger">
+                        <td>
+                            <input type="text" name="name" id="name" placeholder="NAME">
+                        </td>
+                        <td>
+                            <select name="sex" id="sex">
+                                <option value="MALE">M</option>
+                                <option value="FEMALE">F</option>
+                                <option value="OTHERS">OTHERS</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="berth">
+                                <option value="SLEEPER">SLEEPER</option>
+                                <option value="3A">3A</option>
+                                <option value="2A">2A</option>
+                                <option value="1A">1A</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="meal" id="meal" placeholder="MEAL">
+                        </td>
+                        <td>
+                            <input type="text" name="idn" id="idn" placeholder="ID CARD">
+                        </td>
+                        <td>
+                            <input type="text" name="idno" id="idno" placeholder="ID CARD NUMBER">
+                        </td>
+                    </tr>
+                    
+                </thead>
+            </table>
+        </div>
+        <div class="add">
+            <input type="button" value="ADD NEW PASSENGER">
+        </div>
+        <div>
+            <table id="allChildTable">
+                <p>ENTER CHILD PASSENGER DETAILS</p>
+                <tr id="singleChild">
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="NAME">
+                    </td>
+                    <td>
+                        <select name="gender_child" id="child_gender">
+                            <option value="MALE">MALE</option>
+                            <option value="FEMALE">FEMALE</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="AGE" id="bert" placeholder="AGE">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="addChild">
+            <input type="button" value="ADD NEW PASSENGER">
+        </div>
+        <br>
+        <div>
+            <label for="name">ENTER NAME OF THE APPLICANT</label>
+            <input type="text" name="name" id="name">
+            <label for="addr">ENTER FULL ADDRESS</label>
+            <input type="text" name="addr" id="addr">
+        </div>
+        <div>
+            <label for="mno">ENTER MOBILE NUMBER</label>
+            <input type="number" name="pno" id="pno">
+            <label for="emial">ENTER EMAIL</label>
+            <input type="email" name="emial" id="email">
+        </div>
+        <div>
+            <label for="date">SELECT DATE</label>
+            <input type="date" name="date" id="date">
+            <input type="submit" value="SUBMIT">
+        </div>
+            </select>
+
+        <script src="script.js"></script>
+    </html>
