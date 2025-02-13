@@ -9,7 +9,8 @@ User-friendly interface
 Supports basic arithmetic operations
 Responsive design
 Interactive buttons with hover effects
-Technologies Used
+
+Technologies Used:
 HTML5
 CSS3
 JavaScript
