@@ -1,0 +1,55 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+*{
+    font-family: fantasy;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 100;
+}
+.white{
+    background-color: white !important;
+}
+.white,.red,.yellow,.blue,.green{
+    height: 200px;
+    width: 200px;
+    border: 12px solid black;
+    margin: 20px;
+    border-radius: 15%;
+}
+#set1,#set2{
+    display: flex;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+
+.dis{
+    height: 100px;
+    width: 500px;
+    border: 2px solid black;
+    background-color: greenyellow;
+}
+
+#btn{
+    color:black;
+    background-color: white;
+    height: 50%;
+    width: 50%;
+}
