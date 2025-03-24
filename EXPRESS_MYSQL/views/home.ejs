@@ -1,0 +1,22 @@
+<!-- home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="/style3.css" />
+</head>
+
+<body>
+    <div>
+        <h1>OUR TOTAL FAMILY SIZE : <%= count["COUNT(id)"] %>
+        </h1>
+        <form action="/users/new" method="get">
+            <button>JOIN US TODAY</button>
+        </form>
+    </div>
+</body>
+
+</html>

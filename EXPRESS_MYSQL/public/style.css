@@ -1,0 +1,67 @@
+* {
+  font-family: sans-serif;
+  color: aliceblue;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  background-color: red;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+table,
+tr,
+th,
+td {
+  border: 2px solid wheat;
+  border-collapse: collapse;
+}
+
+table {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  background-color: black;
+  color: aliceblue;
+}
+#del:hover {
+  border-radius: 12px;
+  border: 2px solid black;
+  background-color: red;
+  color: black;
+}
+#edit:hover,
+#sub:hover {
+  border-radius: 12px;
+  border: 2px solid black;
+  background-color: aqua;
+  color: black;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 2px solid rgb(251, 2, 2);
+}
+
+input,
+textarea {
+  color: black;
+  border-radius: 12px;
+  border: 2px solid rgb(251, 251, 251);
+}

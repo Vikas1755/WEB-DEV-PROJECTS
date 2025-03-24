@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT USER</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>EDIT:<%=user[0]["id"]%>
+    </h1>
+    <form action="/users/<%=user[0]["id"]%>?_method=PATCH" method="post">
+        <textarea name="name" id="name"><%=user[0]["username"]%></textarea><br>
+        <input type="password" name="pass" id="pass" placeholder="password"><br>
+        <button id="sub">EDIT</button>
+    </form>
+</body>
+
+</html>

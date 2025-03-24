@@ -1,0 +1,26 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-image: url("https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    background-color: red;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+button{
+    border-radius: 12px;
+    border: 2px solid black;
+}
+button:hover{
+    box-shadow: 1px 1px 1px black;
+    background-color: greenyellow;
+}
