@@ -16,7 +16,7 @@ const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   database: "vikas",
-  password: "",//pass
+  password: "Vikas@0555",
 });
 
 app.listen(port, () => {
@@ -120,15 +120,17 @@ app.get("/users/:id/delete", (req, res) => {
 app.patch("/users/:id/delete", (req, res) => {
   console.log("inside patch");
   let pass = req.body.pass;
-  let q = `SELECT password FROM users WHERE password = "${pass}"`;
+  let email = req.body.email;
+  console.log(pass);
+  console.log(email);
+  let q = `SELECT * FROM users WHERE password = "${pass}"`;
   let q1 = `DELETE FROM users WHERE password = "${pass}"`;
   try {
     connection.query(q, (err, results) => {
-      if (err) throw err;
-      console.log(results);
+      if (err) throw(err);
       if (results.length === 0) {
         res.render("wrongPass.ejs");
-      } else if (pass === results[0]["password"]) {
+      } else if (pass === results[0]["password"] && email === results[0]["email"]) {
         try {
           if (err) throw err;
           connection.query(q1, (err, results) => {
@@ -139,6 +141,8 @@ app.patch("/users/:id/delete", (req, res) => {
           console.log(err);
           connection.end();
         }
+      }else{
+        res.render("wrongPass.ejs");
       }
     });
   } catch (err) {
