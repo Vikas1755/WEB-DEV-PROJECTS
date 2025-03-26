@@ -5,6 +5,7 @@ const app = express();
 const path = require("path");
 const port = 8080;
 const methodOverride = require("method-override");
+const { v4: uuidv4 } = require('uuid');
 
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: true }));
@@ -157,7 +158,9 @@ app.get("/users/new", (req, res) => {
 });
 
 app.post("/users/new", (req, res) => {
+  let id = uuidv4();
   let data = Object.values(req.body);
+  data.unshift(id);
   let q = `INSERT INTO users VALUES (?,?,?,?)`;
   connection.query(q, data, (err, results) => {
     try {
