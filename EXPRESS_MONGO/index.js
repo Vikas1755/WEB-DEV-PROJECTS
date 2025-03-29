@@ -50,7 +50,7 @@ app.patch("/chats/update/:id",async(req,res)=>{
     res.redirect("/chats");
 });
 
-app.get("/chats/delete/:id", async (req,res)=>{
+app.delete("/chats/:id", async (req,res)=>{
     let {id} = req.params;
     let chatDel = await Chat.findByIdAndDelete(id);
     console.log(chatDel);
