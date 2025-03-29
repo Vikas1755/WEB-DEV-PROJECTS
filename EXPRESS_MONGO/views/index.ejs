@@ -1,3 +1,4 @@
+<!-- index.ejs -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +31,7 @@
         <form action="/chats/update/<%=chat._id%>" method="get">
           <button id="upd">update</button>
         </form>
-        <form action="/chats/delete/<%=chat._id%>" method="get">
+        <form action="/chats/<%=chat._id%>?_method=DELETE" method="post">
           <button id="del">delete</button>
         </form>
       </div>
