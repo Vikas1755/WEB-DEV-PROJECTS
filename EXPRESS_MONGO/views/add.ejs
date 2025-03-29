@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>SEND MESSAGE</h2>
+    <form action="/chats/new" method="post">
+        <div class="ext">
+            <div class="full">
+                <div class="msg">
+                    <p><span>FROM:&nbsp;</span><input type="text" name="form" id="from"></p>
+                <p><span>MESSAGE:&nbsp;</span><textarea type="text" name="msg" id="msg" rows="10" cols="25"></textarea></p>
+                <p><span>TO:&nbsp;</span><input type="text" name="to" id="to"></p>
+                </div>
+                <button>SEND</button>
+            </div>
+        </div>
+            <!-- <input type="text" name="from" id="from" placeholder="from">
+            <textarea type="text" name="msg" id="msg" placeholder="type messsage here"></textarea>
+            <input type="text" name="to" id="to" placeholder="TO:"> -->
+    </form>
+</body>
+</html>

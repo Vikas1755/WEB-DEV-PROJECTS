@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>UPADTE</h2>
+    <form action="/chats/update/<%=chatUpdate._id%>?_method=PATCH" method="post">
+        <div class="ext">
+            <div class="full">
+                <div class="msg">
+                    <textarea name="msg" id="msg"><%=chatUpdate.msg%></textarea>
+                </div>
+                <button>UPDATE</button>
+            </div>
+        </div>
+</body>
+</html>
